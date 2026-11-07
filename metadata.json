@@ -1,0 +1,6 @@
+{
+  "name": "Clube VTXMais - Benefícios & Cupons",
+  "description": "Plataforma completa de clube de vantagens com captura de leads, geolocalização por CEP, integração CRM e painel administrativo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1e293b;
+    background-color: #f8fafc;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Space Grotesk', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ============================================================
+   MODO DE ALTO CONTRASTE (ACESSIBILIDADE VISUAL / WCAG AAA)
+   ============================================================ */
+html.high-contrast {
+  color-scheme: dark;
+}
+
+html.high-contrast body {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+}
+
+/* Fundo Preto Absoluto para Contêineres e Seções */
+html.high-contrast header,
+html.high-contrast nav,
+html.high-contrast main,
+html.high-contrast aside,
+html.high-contrast footer,
+html.high-contrast section,
+html.high-contrast article,
+html.high-contrast dialog,
+html.high-contrast .bg-white,
+html.high-contrast .bg-slate-50,
+html.high-contrast .bg-slate-100,
+html.high-contrast .bg-slate-200,
+html.high-contrast .bg-slate-800,
+html.high-contrast .bg-slate-900,
+html.high-contrast .bg-slate-950,
+html.high-contrast .bg-blue-50,
+html.high-contrast .bg-blue-600,
+html.high-contrast .bg-blue-900,
+html.high-contrast .bg-blue-950,
+html.high-contrast .bg-emerald-50,
+html.high-contrast .bg-emerald-600,
+html.high-contrast .bg-amber-50 {
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  border-color: #ffffff !important;
+}
+
+/* Tipografia de Alto Contraste (Branco Puro) */
+html.high-contrast h1,
+html.high-contrast h2,
+html.high-contrast h3,
+html.high-contrast h4,
+html.high-contrast h5,
+html.high-contrast h6,
+html.high-contrast p,
+html.high-contrast span,
+html.high-contrast label,
+html.high-contrast li,
+html.high-contrast td,
+html.high-contrast th,
+html.high-contrast .text-slate-900,
+html.high-contrast .text-slate-800,
+html.high-contrast .text-slate-700,
+html.high-contrast .text-slate-600,
+html.high-contrast .text-slate-500,
+html.high-contrast .text-slate-400,
+html.high-contrast .text-slate-300,
+html.high-contrast .text-slate-200 {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+}
+
+/* Destaques em Amarelo de Alta Visibilidade (#FFFF00) */
+html.high-contrast strong,
+html.high-contrast b,
+html.high-contrast mark,
+html.high-contrast .text-transparent,
+html.high-contrast .text-blue-600,
+html.high-contrast .text-blue-500,
+html.high-contrast .text-blue-400,
+html.high-contrast .text-emerald-400,
+html.high-contrast .text-emerald-500,
+html.high-contrast .text-emerald-600,
+html.high-contrast .text-amber-400,
+html.high-contrast .text-amber-500 {
+  color: #ffff00 !important;
+  -webkit-text-fill-color: #ffff00 !important;
+  background-image: none !important;
+  background-clip: unset !important;
+}
+
+/* Bordas Nítidas e Remoção de Sombras/Desfoques */
+html.high-contrast *,
+html.high-contrast *::before,
+html.high-contrast *::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+html.high-contrast div[class*="border"],
+html.high-contrast section[class*="border"],
+html.high-contrast article[class*="border"],
+html.high-contrast aside[class*="border"],
+html.high-contrast header[class*="border"],
+html.high-contrast footer[class*="border"],
+html.high-contrast nav[class*="border"] {
+  border-color: #ffffff !important;
+}
+
+/* Campos de Formulário com Fundo Preto e Texto Amarelo */
+html.high-contrast input,
+html.high-contrast select,
+html.high-contrast textarea {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 2px solid #ffff00 !important;
+  font-weight: 700 !important;
+}
+
+html.high-contrast input::placeholder,
+html.high-contrast textarea::placeholder {
+  color: #cccccc !important;
+}
+
+/* Botões com Bordas Nítidas e Efeito Hover Amarelo/Preto */
+html.high-contrast button,
+html.high-contrast a[role="button"] {
+  border: 2px solid #ffffff !important;
+  background-color: #000000 !important;
+  color: #ffffff !important;
+  font-weight: 700 !important;
+}
+
+html.high-contrast button:hover,
+html.high-contrast button:focus,
+html.high-contrast a[role="button"]:hover {
+  background-color: #ffff00 !important;
+  color: #000000 !important;
+  border-color: #ffff00 !important;
+}
+
+html.high-contrast button:hover *,
+html.high-contrast button:focus *,
+html.high-contrast a[role="button"]:hover * {
+  color: #000000 !important;
+}
+
+/* Foco Acessível em Todo o Site */
+html.high-contrast :focus-visible {
+  outline: 3px solid #ffff00 !important;
+  outline-offset: 2px !important;
+}
+
+/* Pílulas, Tags e Badges */
+html.high-contrast [class*="badge"],
+html.high-contrast [class*="pill"],
+html.high-contrast span[class*="rounded"] {
+  background-color: #000000 !important;
+  color: #ffff00 !important;
+  border: 1.5px solid #ffff00 !important;
+}
+
+/* Desativação de Gradientes e Efeitos de Desfoque */
+html.high-contrast [class*="backdrop-blur"],
+html.high-contrast [class*="blur-3xl"] {
+  backdrop-filter: none !important;
+  filter: none !important;
+  background-image: none !important;
+}
+
+/* Sublinhado em Links para Máxima Legibilidade */
+html.high-contrast a:not([role="button"]):not(header a) {
+  text-decoration: underline !important;
+  text-underline-offset: 3px !important;
+}
+

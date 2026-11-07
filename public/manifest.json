@@ -1,0 +1,25 @@
+{
+  "id": "/",
+  "name": "VTXMais - Clube de Benefícios & Cupons",
+  "short_name": "VTXMais",
+  "description": "Clube de vantagens, cashback e cupons de desconto exclusivos perto de você.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "theme_color": "#1e3a8a",
+  "background_color": "#f8fafc",
+  "icons": [
+    {
+      "src": "/logo_vtx_mais.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo_vtx_mais.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
